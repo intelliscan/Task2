@@ -18,6 +18,9 @@ public class Comment extends AbstractEntity {
 	@ManyToOne
 	private Medication medication;
 
+	public Comment()
+	{}
+	
 	public Comment(User user, String text, Medication medication) {
 		setText(text);
 		setUser(user);
